@@ -67,7 +67,8 @@ print_progress_bar
 steps.each_with_index do |step, index|
   puts (index + 1).to_s + ") " + step[:description]
 end
-def generic_recipe_step
+
+def generic_recipe_step  #this code is useles???
   puts "On it!"
   print_progress_bar
 end
