@@ -106,7 +106,7 @@ def break_eggs
   end
 end
 def ask_if_ready(step, index)
-  puts "Are you ready for step #{index + 1}?\n(#{step[:description]})"
+  puts "There are 14 steps.Are you ready for step #{index + 1}?\n(#{step[:description]}) "
   answer = gets.chomp
 
   answer.upcase == 'Y'
@@ -125,4 +125,7 @@ steps.each_with_index do |step, index|
 
   send(step[:action])
 end
+ generic_recipe_step
 print_divider
+print_divider
+puts "Listo! Enjoy your meal!"
